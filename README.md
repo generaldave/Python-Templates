@@ -1,6 +1,6 @@
 All templates follow this file structure:
 
-![filestructure](https://cloud.githubusercontent.com/assets/7481680/22213527/8c44ca1a-e162-11e6-86a9-603efdd13b69.png)
+![filestructure](https://cloud.githubusercontent.com/assets/7481680/25511738/b1176c20-2b96-11e7-88a4-c4d42aaf0cc9.png)
 
 This is done in:
 
