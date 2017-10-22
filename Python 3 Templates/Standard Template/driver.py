@@ -25,7 +25,7 @@ import os                  # For file handling
 ################################################################################
 
 # Initialize app
-def main(appDirectory) -> None:
+def main(appDirectory : str) -> None:
     App(appDirectory)
 
 # If this file was ran directly: try to run app, or log errors
