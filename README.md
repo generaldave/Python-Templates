@@ -4,6 +4,6 @@ All templates follow this file structure:
 
 This is done in:
 
-- Python 2.7
-- Python 3.5
+- Python 2.7.12
+- Python 3.5.2
 - PyGame 1.9.3
