@@ -50,16 +50,33 @@ class App(object):
         '''
         Runs Pygame application.
         '''
-        
+
+        alt_down = False
+        rendered = False
         running = True
         while running:
-            for event in pygame.event.get():
+            events = pygame.event.get()
+            for event in events:
                 
                 # Handle quit event
                 if event.type == pygame.QUIT:
                     running = False
 
-            self.screen.fill(background_color)
+                # Handle ALT + F4
+                if event.type == pygame.KEYUP:
+                    if event.key == pygame.K_LALT:
+                        alt_down = False
+                if event.type == pygame.KEYDOWN:
+                    if event.key == pygame.K_F4 and alt_down == True:
+                        running = False
+                    if event.key == pygame.K_LALT:
+                        alt_down = True
+                    
+
+            # Only redraw screen if there is a change
+            if rendered == False:
+                self.screen.fill(background_color)
+                rendered = True
 
             # Update Screen
             pygame.display.update()
