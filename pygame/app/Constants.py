@@ -6,8 +6,6 @@ Constants file - File contains application constants.
 10-15-2017
 '''
 
-__all__ = ['background_color', 'screen_resolution', 'app_title', 'fps']
-
 from collections import namedtuple
 
 point = namedtuple('point', ['x', 'y'])
