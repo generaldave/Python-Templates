@@ -71,7 +71,10 @@ class App(object):
                         running = False
                     if event.key == pygame.K_LALT:
                         alt_down = True
-                    
+
+            # Quit
+            if running == False:
+                break                    
 
             # Only redraw screen if there is a change
             if rendered == False:

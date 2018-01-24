@@ -1,7 +1,7 @@
 '''
 David Fuller
 
-Driver file - Basic file to driv a Python application.
+Driver file - Basic file to drive a Python application.
 
 10-15-2017
 '''
