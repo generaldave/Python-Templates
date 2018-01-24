@@ -6,8 +6,14 @@ App class: Initializes application
 10-22-2017
 '''
 
+import sys
+
 from .Constants import *
-from Tkinter import *
+
+if sys.version_info >= (3, 0):
+    from tkinter import *
+else:
+    from Tkinter import *
 
 class App(object):
     '''
